@@ -1,0 +1,144 @@
+.preview {
+  padding-top: 110px;
+
+  padding-bottom: 140px;
+
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 899px) {
+  .preview {
+    background-position: left;
+  }
+}
+
+@media (max-width: 1160px) {
+  .preview {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+@media (max-width: 520px) {
+  .preview {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.webp .preview {
+  background-image: url("../img/preview-background.webp");
+}
+
+.no-webp .preview {
+  background-image: url("../img/preview-background.jpg");
+}
+
+.preview__container {
+  display: grid;
+}
+
+.preview__title {
+  margin: 0;
+  margin-bottom: 30px;
+
+  color: #22181c;
+
+  font-weight: bold;
+  font-size: 52px;
+  line-height: 105%;
+}
+
+@media (max-width: 520px) {
+  .preview__title {
+    margin-bottom: 20px;
+
+    font-size: 40px;
+  }
+}
+
+.preview__list {
+  display: grid;
+  grid-row-gap: 14px;
+
+  max-width: 500px;
+  margin: 0;
+  margin-bottom: 60px;
+  padding: 0;
+
+  list-style: none;
+}
+
+@media (max-width: 520px) {
+  .preview__list {
+    margin-bottom: 30px;
+  }
+}
+
+.preview__item {
+  position: relative;
+
+  padding-left: 16px;
+
+  color: #22181c;
+
+  font-size: 32px;
+  line-height: 105%;
+}
+
+@media (max-width: 520px) {
+  .preview__item {
+    font-size: 24px;
+  }
+}
+
+.preview__item::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 0;
+
+  width: 10px;
+  height: 4px;
+  border-radius: 6px;
+
+  background-color: #d84727;
+}
+
+.preview__item b {
+  color: #22181c;
+
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 150%;
+}
+
+@media (max-width: 520px) {
+  .preview__item b {
+    font-size: 24px;
+  }
+}
+
+.preview__link {
+  justify-self: start;
+
+  padding: 18px 24px;
+  border-radius: 6px;
+
+  background: #d84727;
+
+  color: #fff;
+
+  font-size: 18px;
+  line-height: 17px;
+  text-decoration: none;
+
+  transition: .3s;
+}
+
+.preview__link:hover,
+.preview__link:focus {
+  background: #cf3e1d;
+}
