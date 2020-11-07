@@ -35,9 +35,15 @@
     <include src="build/img/sprite.svg"></include>
   </div>
 
+  <a class="preview__link visually-hidden" href="#">Получить консультацию</a>
+  <a class="service__decision service__decision--confidentiality visually-hidden" href="#">Выбрать готовое решение</a>
+  <a class="service__decision service__decision--corruption visually-hidden" href="#">Выбрать готовое решение</a>
+  <a class="service__decision service__decision--business-online visually-hidden" href="#">Выбрать готовое решение</a>
+  <a class="service__decision service__decision--consult visually-hidden" href="#">Выбрать готовое решение</a>
+
   <header class="header">
     <div class="header__container container">
-      <a class="header__logo">
+      <a class="header__logo" href="/">
         <img class="header__image" src="img/logo.svg" alt="Татьяна Прохорова">
       </a>
       <button class="header__menu" type="button">
@@ -52,13 +58,13 @@
             <a href="/" class="nav__link">Главная</a>
           </li>
           <li class="nav__item">
-            <a href="#service" class="nav__link scroll">Мои услуги</a>
+            <a href="index.html#service" class="nav__link">Мои услуги</a>
           </li>
           <li class="nav__item">
-            <a href="#list" class="nav__link scroll">Готовые решения</a>
+            <a href="index.html#list" class="nav__link">Готовые решения</a>
           </li>
           <li class="nav__item">
-            <a href="#why" class="nav__link scroll">Почему работают со мной</a>
+            <a href="index.html#why" class="nav__link">Почему работают со мной</a>
           </li>
         </ul>
       </nav>
@@ -78,204 +84,47 @@
   </header>
 
   <main class="main">
-    <h1 class="visually-hidden">Главная страница компании Татьяны Прохоровой</h1>
+    <h1 class="visually-hidden">Информация по оплате "Деловой Партнер"</h1>
 
-    <section class="preview" id="preview">
-      <div class="preview__container container">
-        <h2 class="preview__title">Бухгалтер и юрист</h2>
-        <ul class="preview__list">
-          <li class="preview__item">для онлайн-школ</li>
-          <li class="preview__item">для клиентов, кто работает или планирует выйти на площадки
-            <b>Wildberries, Lamoda,Ozon</b>
-          </li>
-        </ul>
-        <a class="preview__link" href="/">Получить консультацию</a>
-      </div>
-    </section>
-
-    <section class="service" id="service">
-      <div class="service__container container">
-        <h2 class="service__title">Мои услуги</h2>
-        <div class="service__wrap">
-          <h3>Для онлайн школ</h3>
-          <ul class="service__list">
-            <li class="service__item">Оказываю полное бухгалтерское и юридическое сопровождение</li>
-            <li class="service__item">Работаю с претензиями клиентов по обучающим курсам</li>
-            <li class="service__item">Представляю ваши интересы в суде</li>
-            <li class="service__item">Регистрирую товарный знак для вашей онлайн-школы</li>
-            <li class="service__item">Защищаю авторские права и деловую репутацию вашей онлайн-школы</li>
-            <li class="service__item">Составляю договоры оферты, пользовательские соглашения, договоры между продюсером и
-              экспертом, договоры с подрядчиками (СММ-специалистами, фотографами, видеографами, таргетологами, дизайнерами
-              и&nbsp;т.п.)</li>
+    <section class="info">
+      <div class="info__container container">
+        <a class="info__main" href="/">На главную</a>
+        <div class="info__wrap">
+          <h2 class="info__title">Контакты:</h2>
+          <p class="info__text">Фактический адрес: г.Киров, ул. Молодой Гвардии, 46А (этаж 1, помещение 1005)</p>
+          <p class="info__text">Электронная почта: <a class="info__email"
+              href="mailto:delovoi_partner@bk.ru">delovoi_partner@bk.ru</a></p>
+          <p class="info__text">Телефоны: <a class="info__phone" href="tel:8(800)600-05-36">8 (800) 600-05-36</a></p>
+        </div>
+        <div class="info__wrap">
+          <h2 class="info__title">Реквизиты:</h2>
+          <p class="info__text">ООО «Надежный Деловой Партнер»</p>
+          <p class="info__text">ИНН 4345438025 / ОГРН 1164350055671.</p>
+          <p class="info__text">Юридический адрес: 610017, Кировская область, Киров г, Молодой Гвардии ул, дом №46А,
+            помещение 1005</p>
+        </div>
+        <div class="info__wrap">
+          <h2 class="info__title">Способы оплаты:</h2>
+          <p class="info__text">Для выбора оплаты товара с помощью банковской карты на соответствующей странице
+            необходимо нажать кнопку Оплата заказа банковской картой. Оплата происходит через ПАО СБЕРБАНК с
+            использованием банковских карт следующих платёжных систем:</p>
+          <ul class="info__list-li" style="margin-bottom: 20px;">
+            <li><img src="img/mir.svg" alt="МИР"></li>
+            <li><img src="img/visa.svg" alt="VISA International"></li>
+            <li><img src="img/mastercard.svg" alt="Mastercard Worldwide"></li>
+            <li><img src="img/jcb.svg" alt="JCB"></li>
           </ul>
+          <p class="info__text">Для оплаты (ввода реквизитов Вашей карты) Вы будете перенаправлены на платёжный шлюз ПАО
+            СБЕРБАНК. Соединение с платёжным шлюзом и передача информации осуществляется в защищённом режиме с
+            использованием протокола шифрования SSL. В случае если Ваш банк поддерживает технологию безопасного
+            проведения интернет-платежей Verified By Visa, MasterCard SecureCode, MIR Accept, J-Secure для проведения
+            платежа также может потребоваться ввод специального пароля.</p>
+          <p class="info__text">Настоящий сайт поддерживает 256-битное шифрование. Конфиденциальность сообщаемой
+            персональной информации обеспечивается ПАО СБЕРБАНК. Введённая информация не будет предоставлена третьим
+            лицам за исключением случаев, предусмотренных законодательством РФ. Проведение платежей по банковским
+            картам осуществляется в строгом соответствии с требованиями платёжных систем МИР, Visa Int., MasterCard
+            Europe Sprl, JC</p>
         </div>
-        <div class="service__wrap">
-          <h3>Для клиентов, кто работает с онлайн-площадками</h3>
-          <ul class="service__list">
-            <li class="service__item">Провожу консультации по оптимизации налогов при работе с площадками Wildberries,
-              Lamoda,
-              Ozon</li>
-            <li class="service__item">Выстраиваю бизнес-процессы для снижения рисков</li>
-            <li class="service__item">Оказываю юридическое, бухгалтерское и финансовое сопровождение</li>
-            <li class="service__item">Работаю с формированием договоров с поставщиками, производителями и т.п.</li>
-            <li class="service__item">Обучаю предпринимателей самостоятельно минимизировать риски в бизнесе путём
-              правильного
-              юридического и бухгалтерского оформления документов и сделок</li>
-            <li class="service__item">Обучаю персонал ведению претензионной работы, что значительно снижает количество
-              возвратов денег клиентам</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="photo" id="photo">
-      <h2 class="visually-hidden">Фотографии Татьяны Прохоровой</h2>
-      <ul class="photo__list">
-        <li class="photo__item"><img src="img/photo-01.jpg" alt="Татьяна Прохорова"></li>
-        <li class="photo__item"><img src="img/photo-02.jpg" alt="Татьяна Прохорова"></li>
-        <li class="photo__item"><img src="img/photo-03.jpg" alt="Татьяна Прохорова"></li>
-      </ul>
-    </section>
-
-    <section class="services" id="services">
-      <div class="service__background">
-        <div class="services__container container">
-          <h2 class="visually-hidden">Преймущества Татьяны Прохоровой</h2>
-          <blockquote class="services__blockquote">
-            <p class="services__text">“Я знаю, на какие моменты стоит обратить особое&nbsp;внимание в бизнесе и хочу
-              предостеречь
-              вас от возможных ошибок”
-            </p>
-            <img src="img/photo.jpg" alt="Татьяна Прохорова">
-            <cite class="services__cite">
-              <p class="services__name">Татьяна Прохорова</p>
-              <p class="services__prof">Эксперт в области юриспруденции и бухгалтерии</p>
-            </cite>
-          </blockquote>
-          <ul class="services__list" id="list">
-            <li class="services__item">
-              <a class="services__link scroll" href="#confidentiality">
-                <svg class="services__icon" width="64" height="64" aria-hidden="true">
-                  <use xlink:href="#icon-services-decore-01"></use>
-                </svg>
-                Конфиденциальность <br> вашего бизнеса
-              </a>
-            </li>
-            <li class="services__item">
-              <a class="services__link scroll" href="#anti-corruption">
-                <svg class="services__icon" width="64" height="64" aria-hidden="true">
-                  <use xlink:href="#icon-services-decore-02"></use>
-                </svg>
-                Антикоррупционная <br> деятельность
-              </a>
-            </li>
-            <li class="services__item">
-              <a class="services__link scroll" href="#business-online">
-                <svg class="services__icon" width="64" height="64" aria-hidden="true">
-                  <use xlink:href="#icon-services-decore-03"></use>
-                </svg>
-                Бизнес в <br> онлайн
-              </a>
-            </li>
-            <li class="services__item">
-              <a class="services__link scroll" href="#consult">
-                <svg class="services__icon" width="64" height="64" aria-hidden="true">
-                  <use xlink:href="#icon-services-decore-04"></use>
-                </svg>
-                Консультация по оптимизации налогов при работе с площадками Wildberries, Lamoda, Ozon
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <section class="services__section section section--1" id="confidentiality">
-        <div class="section__container section__container--1 container">
-          <div class="section__wrap section__wrap--left">
-            <h3 class="section__title">Конфиденциальность вашего&nbsp;бизнеса</h3>
-            <p class="section__text">Конфиденциальность - необходимая составляющая нормального коммерческого
-              оборота и важнейший элемент безопасности бизнеса.</p>
-            <p class="section__text">Конфиденциальность в бизнесе является основой успеха вашего проекта.
-              Разглашение "чувствительной информации" может повлечь для компании значительные убытки.</p>
-            <a class="section__decision service__decision--confidentiality" href="#">Выбрать готовое решение</a>
-          </div>
-        </div>
-      </section>
-
-      <section class="services__section section section--2" id="anti-corruption">
-        <div class="section__container section__container--2 container">
-          <div class="section__wrap section__wrap--right">
-            <h3 class="section__title">Антикоррупционная <br> деятельность</h3>
-            <p class="section__text">Коррупция в трудовом договоре образец государственного мейнстрима. Это понятие называют
-              злоупотребление должностным местом или властью с целью получения собственной выгоды. Противоправные действия
-              могут встречаться как в работе сотрудников государственных организаций, так и частных компаний</p>
-            <p class="section__text">Основные принципы противодействия ей, а также способы предупреждения закреплены в ФЗ от
-              25.12.08 № 273-ФЗ “О противодействии коррупции”. Ст. 13.3 Закона обязывает руководителей организаций принимать
-              меры по ее предупреждению.</p>
-            <a class="section__decision service__decision--corruption" href="#">Выбрать готовое решение</a>
-          </div>
-        </div>
-      </section>
-
-      <section class="services__section section section--3" id="business-online">
-        <div class="section__container section__container--3 container">
-          <div class="section__wrap section__wrap--left">
-            <h3 class="section__title">Бизнес в онлайн</h3>
-            <p class="section__text">В условиях пандемии большинство компаний уходит в онлайн. Модный тренд сейчас - это
-              онлайн школы. Онлайн-школа — это бизнес на обучении, построенный в интернете.</p>
-            <p class="section__text">Онлайн-школа — и есть инфобизнес. Просто по-новому упакованный, а иногда и более
-              автоматизированный.</p>
-            <a class="section__decision service__decision--business-online" href="#">Выбрать готовое решение</a>
-          </div>
-        </div>
-      </section>
-
-      <section class="services__section section section--4" id="consult">
-        <div class="section__container section__container--4 container">
-          <div class="section__wrap section__wrap--right">
-            <h3 class="section__title">Консультация <br> по оптимизации налогов при работе с площадками Wildberries, Lamoda,
-              Ozon</h3>
-            <p class="section__text">В наше время привычные для всех магазины и торговые центры уходят на второй план.
-              Сейчас всё больше покупателей предпочитают
-              интернет-магазины, в которых можно приобрести не только одежду и обувь, но и крупную бытовую технику, товары
-              для дома,
-              детские игрушки, мебель и многое другое. Если вы ещё не вышли на онлайн-площадки, вероятно вы теряете часть
-              возможной
-              прибыли.</p>
-            <p class="section__text">Но в работе с маркетплейсами есть нюансы — не получится просто привезти товар и ждать
-              прибыли. Нужно изучить тонкости в
-              условиях договора, разобраться в нескольких видах комиссий и подтвердить право на продажу конкретной
-              продукции.</p>
-            <a class="section__decision service__decision--consult" href="#">Выбрать готовое решение</a>
-          </div>
-        </div>
-      </section>
-    </section>
-
-    <section class="why" id="why">
-      <div class="why__container container">
-        <h2 class="why__title">Почему важно приобрести готовые решения ?</h2>
-        <ul class="why__list">
-          <li class="why__item">
-            <div class="why__wrap">
-              <h3>Готовые пакеты документов</h3>
-              <p>Я подобрала необходимый пакет документов, который обязательно потребуется каждому бизнесу</p>
-            </div>
-          </li>
-          <li class="why__item">
-            <div class="why__wrap">
-              <h3>100% соответствие закону</h3>
-              <p>Я проверила каждый пункт договора на соответствие Законодательству РФ</p>
-            </div>
-          </li>
-          <li class="why__item">
-            <div class="why__wrap">
-              <h3>Поддержка после покупки документов</h3>
-              <p>После приобретения пакета вы получите пост-сервис, Я свяжусь с вами лично для обсуждения именно вашей
-                ситуации, при необходимости я адаптирую документы именно для вас</p>
-            </div>
-          </li>
-        </ul>
       </div>
     </section>
   </main>
