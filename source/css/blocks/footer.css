@@ -134,6 +134,12 @@
   color: #d84727;
 }
 
+@media (max-width: 480px) {
+  .footer__social-link {
+    justify-content: start;
+  }
+}
+
 .footer__social-icon {
   object-fit: cover;
 

@@ -15,7 +15,7 @@
   justify-content: space-between;
 }
 
-@media (max-width: 1160px) {
+@media (max-width: 1220px) {
   .header__container {
     grid-template-rows: auto auto;
     grid-template-columns: repeat(3, max-content);
@@ -59,7 +59,7 @@
   cursor: pointer;
 }
 
-@media (max-width: 1160px) {
+@media (max-width: 1220px) {
   .header__menu {
     justify-self: center;
   }
@@ -102,7 +102,7 @@
   grid-column-start: 2;
 }
 
-@media (max-width: 1160px) {
+@media (max-width: 1220px) {
   .nav {
     top: 50px;
   }
@@ -256,7 +256,7 @@
   color: #fff;
 }
 
-@media (max-width: 1160px) {
+@media (max-width: 1220px) {
   .header__call {
     grid-row-start: 1;
     grid-column-start: 3;
